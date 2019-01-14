@@ -1,0 +1,319 @@
+html{
+    width: 100%;
+    max-width: 100vw;
+    /* overflow-x: hidden;  */
+}
+
+body{
+    position: relative;
+    width: 100%;
+    max-width: 100vw;
+    height: auto;
+    /* overflow-x: hidden;  */
+}
+
+
+.b-lazy {
+    opacity:0;
+    transition: all 0.5s;
+  }
+  .b-loaded {
+    opacity:1;
+  }
+
+:root{
+    font-size: 16px;
+    font-family: 'Lato', 'Trebuchet', 'Verdana', 'Tahoma',
+    'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+a:active{
+    text-decoration: none;
+}
+
+p{
+
+}
+
+h1{
+
+}
+
+#pseudo-body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-image: linear-gradient(to right,#FF416C , #FF4B2B);
+    /* color: darkorange; */
+}
+
+.login-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    box-sizing: border-box;
+}
+
+.login-logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 5em;
+    height: 5em;
+    align-items: center;
+    margin: 0em;
+}
+.login-logo img{
+    width: 100%;
+    height: 100%;
+}
+
+.login-info-card{
+    box-sizing: inherit;
+    color: #474A59;
+    width: 20rem;
+    height: 18rem;
+    padding: 1rem 4em 1rem 1rem;
+    background-color: #fff;
+    position: relative;
+    left: 2rem;
+    z-index: 0;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    height: 60vh;
+    width: 30vw;
+    border-radius: 0.5rem;
+    box-shadow: 0 38px 43px rgba(0,0,0,0.2);
+    z-index: 2;
+}
+
+.input-field-wrapper{
+    width: 60%;
+    position: relative;
+}
+
+.input-field-icon-wrapper{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    color: #FF416C;
+    background-color: #fff;
+    width: 2.9em;
+    height: 2.9em;
+    position: absolute;
+    top: -5px;
+    /* bottom: 0em; */
+    left:-1.7em;
+    border-radius: 50%;
+    box-shadow: 0 0 25px rgba(0,0,0,0.3);
+
+}
+
+.input-field-styles{
+    font-size: 0.88rem;
+    color: #FFF;
+    height: 2.2rem;
+    width: 100%;
+    background-color: #444;
+    box-sizing: border-box;
+    padding-left: 1.5rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 1px;
+    border-bottom: solid 1px #FF416C;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+    transition: 0.2s all ease-in-out;
+}
+
+::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    font-size: 0.7rem;
+}
+
+::-moz-placeholder { /* Mozilla Firefox 19+ */
+    font-size: 0.7rem;
+}
+
+.input-field-styles:focus{
+    border: 1px solid #FF416C;
+    outline: #FF416C;
+    background-color: #666;
+}
+
+.input-submit-style{
+    color: #FF416C;
+    width: 8rem;
+    height: 2.2rem;
+    background-color: #FFF;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.3);
+}
+
+input[type=text]{
+    /* height: 2rem;
+    width: 60%;
+    background-color: #222;
+    margin-bottom: 2rem;
+    border: none; */
+}
+
+input[type=password]{
+    /* margin-bottom: 2rem; */
+}
+
+.no-display{
+    display: none;
+}
+
+
+/*----------Media Queries----------*/
+
+/*landscape for phones*/
+@media only screen 
+and (max-device-width: 900px) 
+and (orientation: landscape) {
+    :root{
+        font-size: 17px;
+    }
+
+}
+
+/*Super HiDPI tablets e.g. Ipad Pro Kindle Fire HD*/
+@media (max-device-width: 1100px)
+and (orientation: portrait){
+    :root {
+        font-size: 30px;
+            }
+        }
+
+/*Smaller tablets e.g. Ipad*/
+@media (max-device-width: 800px)
+and (orientation: portrait){
+:root {
+    font-size: 22px;
+        }
+    }
+
+/*HD + QHD Phablet(should cover tall aspect ratios also)*/
+@media (max-device-width: 500px)
+and (orientation: portrait){
+:root {
+    font-size: 17px;
+        }
+    }
+
+/*qHD sub 5" phones e.g. iPhone 8 */
+@media (max-device-width: 400px)
+and (orientation: portrait){
+    :root {
+        font-size: 16px;
+            }
+        }
+
+/* Low px density sub 4" phone e.g. iPhone SE phone */
+@media (max-device-width: 360px)
+and (orientation: portrait){
+    :root {
+        font-size: 15px;
+            }
+        }
+
+/*2K laptops*/
+@media only screen  and (min-width : 2000px) {
+    :root {
+        font-size: calc(16px * 1.3);
+        }
+    }
+  
+/*4K laptops*/
+@media only screen  and (min-width : 3000px) {
+    :root {
+        font-size: calc(16px * 2.4);
+        }
+    }
+
+/*Landscape for phones*/
+@media only screen 
+and (max-device-width: 900px) 
+and (orientation: landscape) {
+    p{
+        font-size: 17px;
+    }
+
+}
+
+/*Super HiDPI tablets e.g. Ipad Pro Kindle Fire HD*/
+@media (max-device-width: 1100px)
+and (orientation: portrait){
+    p {
+        font-size: 30px;
+            }
+        }
+
+/*Smaller tablets e.g. Ipad*/
+@media (max-device-width: 800px)
+and (orientation: portrait){
+p {
+    font-size: 19px;
+        }
+    }
+
+/*HD + QHD Phablet(should cover tall aspect ratios also)*/
+@media (max-device-width: 500px)
+and (orientation: portrait){
+p {
+    font-size: 17px;
+    word-spacing: 1px;
+        }
+    }
+
+/*qHD sub 5" phones e.g. iPhone 8 */
+@media (max-device-width: 400px)
+and (orientation: portrait){
+    p {
+        font-size: 15px;
+            }
+        }
+
+/* Low px density sub 4" phone e.g. iPhone SE phone */
+@media (max-device-width: 360px)
+and (orientation: portrait){
+    p {
+        font-size: 15px;
+            }
+        }
+
+/*2K laptops*/
+@media only screen  and (min-width : 2000px) {
+    p {
+        font-size: calc(16px * 1.3);
+        }
+    }
+
+/*4K laptops*/
+@media only screen  and (min-width : 3000px) {
+    p {
+        font-size: calc(16px * 2.4);
+        }
+    }
