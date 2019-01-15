@@ -73,7 +73,7 @@ h1{
     width: 6em;
     height: 6em;
     align-items: center;
-    margin: 2em 0em 2.9em 0em;
+    margin: 2em 0em;
     border-radius: 50%;
 }
 .login-avatar img{
@@ -85,8 +85,9 @@ h1{
 .login-banner{
     box-sizing: inherit;
     color: #474A59;
-    width: 20rem;
+    width: 24rem;
     margin-top: 2.5em;
+    border-radius: 3px;
     position: absolute;
     top: 0;
     left: -2rem;
@@ -128,7 +129,6 @@ form{
     left:-1.7em;
     border-radius: 50%;
     box-shadow: 0 0 25px rgba(0,0,0,0.3);
-
 }
 
 .input-field-styles{
@@ -143,7 +143,16 @@ form{
     border: none;
     border-radius: 1px;
     box-shadow: 0 10px 25px rgba(0,0,0,0.3);
-    transition: 0.2s all ease-in-out;
+    transition: 0.1s all ease-in-out;
+}
+
+#form-pwd-recovery{
+    font-size: 0.75rem;
+    text-decoration: underline;
+    position: absolute;
+    margin: 1em 1em;
+    bottom: 0;
+    right: 0;
 }
 
 ::-webkit-input-placeholder { 
@@ -157,6 +166,7 @@ form{
 .input-submit-style{
     width: 8rem;
     height: 2.2rem;
+    background-color: transparent;
     border: none;
     border-radius: 3px;
     margin-top: 1em;
@@ -167,16 +177,25 @@ form{
     background-color: #333;
 }
 
-.dark-theme-highlight{
+.dark-theme-contrast{
     background-color: #444;
 }
 
-.dark-theme-highlight:focus{
-    background-color: #666;
+.dark-theme-contrast:focus{
+    background-color: #222;
 }
 
-.dark-theme-contrast{
+.dark-theme-negative{
     background-color: #fff;
+}
+
+.btn-dark-theme{
+    background-color: #333;
+    transition: 0.1s all ease-in-out;
+}
+
+.btn-dark-theme:hover{
+    background-color: #222;
 }
 
 .bg-theme{
