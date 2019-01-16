@@ -1,3 +1,4 @@
+<?php include 'php/login.php'?>
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8">
@@ -37,7 +38,9 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
 <div id="pseudo-body" class="bg-theme">
 <div id="login-card" class="login-wrapper">
   <div class="login-banner txt-theme border-right-md-theme dark-theme-negative">
-      <h3>Good Afternoon, Ema</h3>
+      <h3> 
+      <?php 
+      $hour = date('H', time()); echo greeting($hour);?>, Ema</h3>
   </div>
 <form class="dark-theme">
     <div class="login-avatar-wrapper">
@@ -63,6 +66,9 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
   <br>
   <a href="#" id="form-pwd-recovery" class="txt-theme">Forgot password?</a>
 </form>
+</div>
+<div class="settings-icon-wrapper" title="settings">
+  <i class="fas fa-sliders-h"></i>
 </div>
 </div>
 <script
