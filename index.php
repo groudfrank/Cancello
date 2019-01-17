@@ -37,7 +37,7 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
 <body>
 <div id="pseudo-body" class="bg-theme">
 <div id="login-card" class="login-wrapper">
-  <div class="login-banner txt-theme border-right-md-theme global-theme-negative">
+  <div class="login-banner txt-highlight border-right-md global-theme-negative">
       <h3> 
       <?php 
       $hour = date('H', time());
@@ -51,34 +51,40 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
       </figure>
     </div>
   <div class="input-field-wrapper">
-    <div class="input-field-icon-wrapper txt-theme global-theme-negative">
+    <div class="input-field-icon-wrapper txt-highlight global-theme-negative">
         <i class="fas fa-user"></i>
     </div>
-    <input type="text" name="username" placeholder="Username" class="input-field-styles input-theme global-theme-contrast">
+    <input type="text" name="username" placeholder="Username" class="input-field-styles border-bottom-sm global-theme-contrast">
   </div>
   <br>
   <div class="input-field-wrapper">
-      <div class="input-field-icon-wrapper txt-theme global-theme-negative">
+      <div class="input-field-icon-wrapper txt-highlight global-theme-negative">
           <i class="fas fa-unlock"></i>
       </div>
-    <input type="password" name="password" placeholder="Password" class="input-field-styles input-theme global-theme-contrast">
+    <input type="password" name="password" placeholder="Password" class="input-field-styles border-bottom-sm global-theme-contrast">
   </div>
   <br>
-  <input type="submit" name="login" value="Login" class="input-submit-style txt-theme btn-global-theme border-full-theme">
+  <input type="submit" name="login" value="Login" class="input-submit-style txt-highlight btn-global-theme border-around-sm">
   <br>
-  <a href="#" id="form-pwd-recovery" class="txt-theme">Forgot password?</a>
+  <a href="#" id="form-pwd-recovery" class="txt-highlight">Forgot password?</a>
 </form>
 </div>
 <div class="settings-icon-wrapper" title="settings">
   <i class="fas fa-sliders-h"></i>
 </div>
 <div id="login-settings-menu-wrapper" class="global-theme">
-  <div id="login-theme-selector" class="login-settings-components global-theme-contrast">
-    <div class="login-theme bg-theme"></div>
-    <div class="login-theme bg-theme-plum-plate"></div>
-    <div class="login-theme bg-theme-intuitive-purple"></div>
-    <div class="login-theme bg-theme-quepal"></div>
-    <div class="login-theme bg-theme-glacia"></div>
+  <div class="login-settings-component-wrapper login-settings-component global-theme-contrast">
+      <div class="banner-sm global-theme-negative txt-highlight">
+          <h5>Themes</h5>
+      </div>
+      <div id="login-theme-selector">
+        <div class="login-theme bg-theme"></div>
+        <div class="login-theme bg-theme-plum-plate"></div>
+        <div class="login-theme bg-theme-sunrise"></div>
+        <div class="login-theme bg-theme-intuitive-purple"></div>
+        <div class="login-theme bg-theme-quepal"></div>
+        <div class="login-theme bg-theme-glacia"></div>
+      </div>
   </div>
 </div>
 </div>

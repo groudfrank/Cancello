@@ -121,7 +121,7 @@ form{
     height: 34.7rem;
     width: 27rem;
     border-radius: 0.5rem;
-    var(--box-shadow-lv3);
+    box-shadow: var(--box-shadow-lv3);
     z-index: 2;
 }
 
@@ -200,7 +200,7 @@ form{
     box-sizing: border-box;
 }
 
-.login-settings-components{
+.login-settings-component{
     width: 25vw;
     padding: 0.5em;
     border-radius: 5px;
@@ -209,11 +209,34 @@ form{
     /* border: solid var(--primary-color) 1px; */
 }
 
+.login-settings-component-wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 1em 0em;
+    box-sizing: border-box;
+}
+
+.banner-sm{
+    border-radius: 3px;
+    box-shadow: var(--box-shadow-lv2);
+    box-sizing: border-box;
+    margin: 0.2em 1em 0.5em 1em;
+}
+
+.banner-sm *{
+    margin: 0em;
+    padding: 0.2em 1em;
+    box-sizing: inherit;
+}
+
 #login-theme-selector{
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .login-theme{
@@ -268,21 +291,17 @@ form{
     background-color: var(--darker-theme-contrast-color);
 }
 
-.bg-theme{
-    background-image: linear-gradient(to right, var(--primary-color) , var(--secondary-color));
-}
 
-
-.input-theme{
+.border-bottom-sm{
     border-bottom: 1px solid var(--primary-color);
 }
 
-.input-theme:focus{
+.border-bottom-sm:focus{
     border: 1px solid var(--primary-color);
     outline: var(--primary-color);
 }
 
-.border-full-theme{
+.border-around-sm{
     border: solid 1px var(--primary-color);
 }
 
@@ -290,11 +309,11 @@ form{
     border-bottom: solid 1px var(--primary-color);
 }
 
-.border-right-md-theme{
+.border-right-md{
     border-right: solid 4px var(--primary-color);
 }
 
-.txt-theme{
+.txt-highlight{
     color: var(--primary-color);
 }
 
@@ -304,12 +323,20 @@ form{
     -webkit-text-fill-color: transparent;
 }
 
+.bg-theme{
+    background-image: linear-gradient(to right, var(--primary-color) , var(--secondary-color));
+}
+
 .bg-theme-quepal{
     background-image: linear-gradient(to right,#11998e , #38ef7d);
 }
 
 .bg-theme-plum-plate{
     background-image: linear-gradient(to right,#667eea, #764ba2);
+}
+
+.bg-theme-sunrise{
+    background-image: linear-gradient(to right, #fda085, #f6d365);
 }
 
 .bg-theme-intuitive-purple{

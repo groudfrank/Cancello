@@ -14,6 +14,10 @@ function greeting($hour){
         $greeting_message = "Good Evening";
     }
 
+    else{
+        $greeting_message = "Welcome";
+    }
+
     return $greeting_message;
 }
 
