@@ -1,4 +1,7 @@
-<?php include 'php/login.php'?>
+<?php include 
+'php/login.php'
+// 'js/main.js;';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="utf-8">
@@ -69,21 +72,21 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
   <a href="#" id="form-pwd-recovery" class="txt-highlight">Forgot password?</a>
 </form>
 </div>
-<div class="settings-icon-wrapper" title="settings">
+<div class="login-settings-btn" title="settings">
   <i class="fas fa-sliders-h"></i>
 </div>
-<div id="login-settings-menu-wrapper" class="global-theme">
+<div id="login-settings-menu-wrapper" class="global-theme toggle-show no-display">
   <div class="login-settings-component-wrapper login-settings-component global-theme-contrast">
       <div class="banner-sm global-theme-negative txt-highlight">
-          <h5>Themes</h5>
+          <h5>Colors</h5>
       </div>
       <div id="login-theme-selector">
-        <div class="login-theme bg-theme"></div>
-        <div class="login-theme bg-theme-plum-plate"></div>
-        <div class="login-theme bg-theme-sunrise"></div>
-        <div class="login-theme bg-theme-intuitive-purple"></div>
-        <div class="login-theme bg-theme-quepal"></div>
-        <div class="login-theme bg-theme-glacia"></div>
+        <div id="sunset" class="login-theme bg-theme"></div>
+        <div id="plum-plate" class="login-theme bg-theme-plum-plate"></div>
+        <div id="sunrise" class="login-theme bg-theme-sunrise"></div>
+        <div id="intuitive-purple" class="login-theme bg-theme-intuitive-purple"></div>
+        <div id="quepal" class="login-theme bg-theme-quepal"></div>
+        <div id="glacia" class="login-theme bg-theme-glacia"></div>
       </div>
   </div>
 </div>

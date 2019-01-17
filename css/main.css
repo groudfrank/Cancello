@@ -168,20 +168,20 @@ form{
     right: 0;
 }
 
-.settings-icon-wrapper {
+.login-settings-btn {
     position: absolute;
     margin: 1em;
     bottom: 0;
     left: 0;
 }
 
-.settings-icon-wrapper i{
+.login-settings-btn i{
     font-size: 1.3rem;
     color: var(--semi-transparent-white);
     transition: 0.1s ease-in-out all;
 }
 
-.settings-icon-wrapper i:hover{
+.login-settings-btn i:hover{
     color: var(--white);
 }
 
@@ -201,7 +201,7 @@ form{
 }
 
 .login-settings-component{
-    width: 25vw;
+    width: 26vw;
     padding: 0.5em;
     border-radius: 5px;
     box-shadow: var(--box-shadow-lv2);
@@ -349,7 +349,7 @@ form{
 
 
 .no-display{
-    display: none;
+    display: none !important;
 }
 
 
