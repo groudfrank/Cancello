@@ -4,9 +4,10 @@ document.addEventListener('DOMContentLoaded', () => {
     var login_settings_btn = document.querySelector('.login-settings-btn');
     var login_settings_menu_wrapper = document.querySelector('#login-settings-menu-wrapper');
     var login_theme = document.querySelectorAll('.login-theme');
+    var bg_theme = document.querySelector('.bg-theme');
 
     // Toggle settings menu on and off
-    login_settings_btn.addEventListener('click', (e) => {
+    login_settings_btn.addEventListener('click', () => {
         if(login_settings_menu_wrapper.classList.contains('toggle-show')){
             login_settings_menu_wrapper.classList.remove('toggle-show');
             login_settings_menu_wrapper.classList.remove('no-display');
@@ -16,17 +17,35 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    alert(window.getComputedStyle(login_settings_btn.getPropertyValue("margin")));
-
     var changeThemeColor = (primary, secondary) => {
         root.style.setProperty('--primary-color', primary);
         root.style.setProperty('--secondary-color', secondary);
     };
 
-    login_theme.forEach((el) => {
-        el.addEventListener('click', (e) =>  {
+    var propertyValueExtractor = (node, property) => {
+        var compStyle = window.getComputedStyle(node);
+        var compValue = compStyle.getPropertyValue(property);
+        return compValue;
+    };
 
-            alert(el.style.width);
+    var gradientColorExtractor = (node, property) => {
+        var regex = /\),/g;
+        var property_string = propertyValueExtractor(node, property);
+        property_string = property_string.replace(/\s|[a-z]|[A-Z]|\-/g, '');
+        property_string = property_string.slice(2, -1);
+        return property_string;
+    };
+
+    alert(gradientColorExtractor(bg_theme, "background-image"));
+
+    // propertyValueExtractor(login_settings_btn, "margin");
+
+    login_theme.forEach((el) => {
+        el.addEventListener('click', () =>  {
+
+            // var compStyle = window.getComputedStyle(el);
+            // var compValue = compStyle.getPropertyValue("background-image");
+            // alert(compValue);
             
             // if(el.id == 'sunset'){
                 
