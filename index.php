@@ -81,7 +81,7 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
           <h5>Colors</h5>
       </div>
       <div id="login-theme-selector">
-        <div id="sunset" class="login-theme bg-theme"></div>
+        <div id="sunset" class="login-theme bg-theme-sunset"></div>
         <div id="plum-plate" class="login-theme bg-theme-plum-plate"></div>
         <div id="sunrise" class="login-theme bg-theme-sunrise"></div>
         <div id="intuitive-purple" class="login-theme bg-theme-intuitive-purple"></div>

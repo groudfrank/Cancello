@@ -327,6 +327,10 @@ form{
     background-image: linear-gradient(to right, var(--primary-color) , var(--secondary-color));
 }
 
+.bg-theme-sunset{
+    background-image: linear-gradient(to right, #FF416C, #FF4B2B);
+}
+
 .bg-theme-quepal{
     background-image: linear-gradient(to right,#11998e , #38ef7d);
 }

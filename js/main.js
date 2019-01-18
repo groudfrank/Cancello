@@ -16,9 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // login_theme.forEach((args) => {
-    //     console.log(args.id);
-    // });
+    alert(window.getComputedStyle(login_settings_btn.getPropertyValue("margin")));
 
     var changeThemeColor = (primary, secondary) => {
         root.style.setProperty('--primary-color', primary);
@@ -27,13 +25,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     login_theme.forEach((el) => {
         el.addEventListener('click', (e) =>  {
-            // alert('clicked');
-            if(el.id == 'sunset'){
-                alert('sunset selected');
-            }
-            if(el.id == 'plum-plate'){
-                changeThemeColor('#667eea','#764ba2');
-            }
+
+            alert(el.style.width);
+            
+            // if(el.id == 'sunset'){
+                
+            // }
+            // if(el.id == 'plum-plate'){
+            //     changeThemeColor('#667eea','#764ba2');
+            // }
         })
     });
 });
