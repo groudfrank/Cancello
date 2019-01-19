@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     var root = document.querySelector(':root');
     var login_settings_btn = document.querySelector('.login-settings-btn');
     var login_settings_menu_wrapper = document.querySelector('#login-settings-menu-wrapper');
-    var login_theme = document.querySelectorAll('.login-theme');
+    var color_palette = document.querySelectorAll('.color-palette');
     var bg_theme = document.querySelector('.bg-theme');
 
     // Toggle settings menu on and off
@@ -33,26 +33,21 @@ document.addEventListener('DOMContentLoaded', () => {
         var property_string = propertyValueExtractor(node, property);
         property_string = property_string.replace(/\s|[a-z]|[A-Z]|\-/g, '');
         property_string = property_string.slice(2, -1);
-        return property_string;
+        property_string = property_string.replace('),(',') (');
+        property_string_array = property_string.split(" ");
+        property_string_array[0] = 'rgb' + property_string_array[0]; 
+        property_string_array[1] = 'rgb' + property_string_array[1]; 
+        return property_string_array;
     };
 
-    alert(gradientColorExtractor(bg_theme, "background-image"));
+    
 
-    // propertyValueExtractor(login_settings_btn, "margin");
-
-    login_theme.forEach((el) => {
+    color_palette.forEach((el) => {
         el.addEventListener('click', () =>  {
 
-            // var compStyle = window.getComputedStyle(el);
-            // var compValue = compStyle.getPropertyValue("background-image");
-            // alert(compValue);
-            
-            // if(el.id == 'sunset'){
-                
-            // }
-            // if(el.id == 'plum-plate'){
-            //     changeThemeColor('#667eea','#764ba2');
-            // }
+            var primary_color = gradientColorExtractor(el, 'background-image')[0];
+            var secondary_color = gradientColorExtractor(el, 'background-image')[1];
+            changeThemeColor(primary_color, secondary_color);
         })
     });
 });
