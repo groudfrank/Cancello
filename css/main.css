@@ -356,6 +356,12 @@ form{
     display: none !important;
 }
 
+.visibility{
+    visibility: hidden;
+    opacity: 0;
+    transition: 0.2s all ease-in-out;
+}
+
 
 /*----------Media Queries----------*/
 

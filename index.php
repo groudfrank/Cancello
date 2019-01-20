@@ -75,7 +75,7 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
 <div class="login-settings-btn" title="settings">
   <i class="fas fa-sliders-h"></i>
 </div>
-<div id="login-settings-menu-wrapper" class="global-theme toggle-show no-display">
+<div id="login-settings-menu-wrapper" class="global-theme toggle-show visibility">
   <div class="login-settings-component-wrapper login-settings-component global-theme-contrast">
       <div class="banner-sm global-theme-negative txt-highlight">
           <h5>Colors</h5>
@@ -96,6 +96,7 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
   crossorigin="anonymous"></script>
 <script src="js/main.js"></script>
+<script src="js/logic.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/blazy/1.8.2/blazy.min.js"></script>
 </body>
 </html>
