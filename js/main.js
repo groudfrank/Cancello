@@ -4,6 +4,8 @@ document.addEventListener('DOMContentLoaded', () => {
     var login_settings_btn = document.querySelector('.login-settings-btn');
     var login_settings_menu_wrapper = document.querySelector('#login-settings-menu-wrapper');
     var color_palette = document.querySelectorAll('.color-palette');
+    var global_theme_toggle_wrapper = document.querySelector('.global-theme-toggle-wrapper');
+    var global_theme_toggle = document.querySelector('.global-theme-toggle');
     var visibility = document.querySelector('.visibility');
 
     var loginWrapperShow = {
@@ -16,6 +18,20 @@ document.addEventListener('DOMContentLoaded', () => {
         visibility: "hidden",
         opacity: "0",
         transform: "translateX(-3em)"
+    }
+
+    var lightTheme = {
+        "--global-theme-color" : "#fff",
+        "--global-theme-contrast-color" : "#f5f5f5",
+        "--global-theme-darker-contrast-color" : "#dcdcdc",
+        "--global-theme-negative" : "#333"
+    }
+
+    var darkTheme = {
+        "--global-theme-color" : "#333",
+        "--global-theme-contrast-color" : "#444",
+        "--global-theme-darker-contrast-color" : "#222",
+        "--global-theme-negative" : "#fff"
     }
 
     // Toggle settings menu on and off
@@ -35,5 +51,19 @@ document.addEventListener('DOMContentLoaded', () => {
             var secondary_color = gradientColorExtractor(el, 'background-image')[1];
             changeThemeColor(root, primary_color, secondary_color);
         })
+    });
+
+    const toggle_btn = global_theme_toggle.style.marginLeft;
+
+    global_theme_toggle_wrapper.addEventListener('click', () => {
+        if(global_theme_toggle_wrapper.classList.contains('toggle-off')){
+            global_theme_toggle_wrapper.classList.remove('toggle-off');
+            global_theme_toggle.style.setProperty('margin-left', '0em');
+            updateProperty(root, lightTheme);
+        }else{
+            global_theme_toggle_wrapper.classList.add('toggle-off');
+            global_theme_toggle.style.setProperty('margin-left', toggle_btn);
+            updateProperty(root, darkTheme);
+        }
     });
 });

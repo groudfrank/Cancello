@@ -29,8 +29,8 @@ body{
     --secondary-color: #FF4B2B;
     --global-theme-color: #333;
     --global-theme-contrast-color: #444;
-    --darker-theme-contrast-color: #222;
-    --global-theme-negative: rgba(255,255,255,1);
+    --global-theme-darker-contrast-color: #222;
+    --global-theme-negative: #fff;
     --white: rgba(255,255,255, 1);
     --semi-transparent-white: rgba(255,255,255, 0.7);
     --transparent: transparent;
@@ -231,6 +231,25 @@ form{
     box-sizing: inherit;
 }
 
+.global-theme-toggle-wrapper{
+    width: 8em;
+    height: 2em;
+    padding: 0.4em;
+    margin: 0.7em;
+    background-color: var(--global-theme-color);
+    border: solid 3px var(--global-theme-negative);
+    border-radius: 2em;
+   box-shadow: var(--box-shadow-lv2);
+}
+
+.global-theme-toggle{
+    width: 2.2em;
+    height: 2em;
+    border-radius: 50%;
+    margin-left: calc(100% - 2.2em);
+    transition: all 0.2s ease-in-out;
+}
+
 #login-theme-selector{
     display: flex;
     flex-direction: row;
@@ -275,7 +294,7 @@ form{
 }
 
 .global-theme-contrast:focus{
-    background-color: var(--darker-theme-contrast-color);
+    background-color: var(--global-theme-darker-contrast-color);
 }
 
 .global-theme-negative{
@@ -288,7 +307,7 @@ form{
 }
 
 .btn-global-theme:hover{
-    background-color: var(--darker-theme-contrast-color);
+    background-color: var(--global-theme-darker-contrast-color);
 }
 
 
@@ -351,6 +370,21 @@ form{
     background-image: linear-gradient(to right,#08c5eb, #805FEF);
 }
 
+.bg-theme-sakura{
+    background-image: linear-gradient(to right,#a18cd1, #fbc2eb);
+}
+
+.bg-theme-amber{
+    background-image: linear-gradient(to right,#ff0844, #ffb199);
+}
+
+.bg-theme-dirt{
+    background-image: linear-gradient(to right,#c79081, #dfa579);
+}
+
+.bg-theme-midnight{
+    background-image: linear-gradient(to right,#537895,#09203f);
+}
 
 .no-display{
     display: none !important;

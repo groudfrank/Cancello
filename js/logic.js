@@ -16,7 +16,6 @@ var updateProperty = (node, obj) => {
     
 }
 
-
 // Sets styles on the --primary-color and --secondary-color variables
 var changeThemeColor = (node, primary, secondary) => {
     node.style.setProperty('--primary-color', primary);
@@ -37,7 +36,7 @@ var propertyValueExtractor = (node, property) => {
 // is extracted as well.
 // gradientColorExtractor basically strips the string so that only the 
 // braces with the rgb values and commas remain. The for in loop just appends the 
-// the string 'rgb' to those rgb values again
+// the string 'rgb' to those rgb values again.
 var gradientColorExtractor = (node, property) => {
     var regex = /\),/g;
     var property_string = propertyValueExtractor(node, property);
@@ -49,7 +48,6 @@ var gradientColorExtractor = (node, property) => {
     for(var i in property_string_array){
         property_string_array[i] = 'rgb' + property_string_array[i];
     }
-    // property_string_array[0] = 'rgb' + property_string_array[0]; 
-    // property_string_array[1] = 'rgb' + property_string_array[1]; 
+  
     return property_string_array;
 };
