@@ -76,6 +76,19 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
   <i class="fas fa-sliders-h"></i>
 </div>
 <div id="login-settings-menu-wrapper" class="global-theme toggle-show visibility">
+<div class="login-settings-component-wrapper login-settings-component global-theme-contrast">
+      <div class="banner-sm global-theme-negative txt-highlight">
+          <h5>Colors</h5>
+      </div>
+      <div id="login-theme-selector">
+        <div id="sunset" class="color-palette bg-theme-sunset"></div>
+        <div id="plum-plate" class="color-palette bg-theme-plum-plate"></div>
+        <div id="sunrise" class="color-palette bg-theme-sunrise"></div>
+        <div id="intuitive-purple" class="color-palette bg-theme-intuitive-purple"></div>
+        <div id="quepal" class="color-palette bg-theme-quepal"></div>
+        <div id="glacia" class="color-palette bg-theme-glacia"></div>
+      </div>
+  </div>
   <div class="login-settings-component-wrapper login-settings-component global-theme-contrast">
       <div class="banner-sm global-theme-negative txt-highlight">
           <h5>Colors</h5>

@@ -27,10 +27,10 @@ body{
                  'Arial Narrow', 'Helvetica', 'Geneva', sans-serif;
     --primary-color: #FF416C;
     --secondary-color: #FF4B2B;
-    --dark-theme-color: #333;
-    --dark-theme-contrast-color: #444;
+    --global-theme-color: #333;
+    --global-theme-contrast-color: #444;
     --darker-theme-contrast-color: #222;
-    --dark-theme-negative: rgba(255,255,255,1);
+    --global-theme-negative: rgba(255,255,255,1);
     --white: rgba(255,255,255, 1);
     --semi-transparent-white: rgba(255,255,255, 0.7);
     --transparent: transparent;
@@ -41,7 +41,7 @@ body{
 
 a{
     text-decoration: none;
-    color: var(--dark-theme-negative);
+    color: var(--global-theme-negative);
 }
 
 a:hover{
@@ -146,10 +146,10 @@ form{
 
 .input-field-styles{
     font-size: 0.88rem;
-    color: var(--dark-theme-negative);
+    color: var(--global-theme-negative);
     height: 2.2rem;
     width: 100%;
-    background-color: var(--dark-theme-contrast-color);
+    background-color: var(--global-theme-contrast-color);
     box-sizing: border-box;
     padding-left: 1.5rem;
     margin-bottom: 1.5rem;
@@ -201,7 +201,7 @@ form{
 }
 
 .login-settings-component{
-    width: 26vw;
+    width: 22vw;
     padding: 0.5em;
     border-radius: 5px;
     box-shadow: var(--box-shadow-lv2);
@@ -244,7 +244,7 @@ form{
     height: 2.2em;
     margin: 0.5rem;
     border-radius: 50%;
-    border: solid var(--dark-theme-negative) 2px;
+    border: solid var(--global-theme-negative) 2px;
     box-sizing: border-box;
 }
 
@@ -267,11 +267,11 @@ form{
 }
 
 .global-theme{
-    background-color: var(--dark-theme-color);
+    background-color: var(--global-theme-color);
 }
 
 .global-theme-contrast{
-    background-color: var(--dark-theme-contrast-color);
+    background-color: var(--global-theme-contrast-color);
 }
 
 .global-theme-contrast:focus{
@@ -279,11 +279,11 @@ form{
 }
 
 .global-theme-negative{
-    background-color: var(--dark-theme-negative);
+    background-color: var(--global-theme-negative);
 }
 
 .btn-global-theme{
-    background-color: var(--dark-theme-color);
+    background-color: var(--global-theme-color);
     transition: 0.1s all ease-in-out;
 }
 
@@ -359,6 +359,7 @@ form{
 .visibility{
     visibility: hidden;
     opacity: 0;
+    transform: translateX(-3em);
     transition: 0.2s all ease-in-out;
 }
 

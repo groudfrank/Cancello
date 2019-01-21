@@ -6,44 +6,31 @@ document.addEventListener('DOMContentLoaded', () => {
     var color_palette = document.querySelectorAll('.color-palette');
     var visibility = document.querySelector('.visibility');
 
-    var cssShow = {
+    var loginWrapperShow = {
         visibility: "visible",
-        opacity: "1"
+        opacity: "1",
+        transform: "translateX(0em)"
     }
 
-    var cssHide = {
+    var loginWrapperHide = {
         visibility: "hidden",
-        opacity: "0"
-    }
-
-    var updateProperty = (node, obj) => {
-
-        var property_entries = Object.entries(obj);
-        // console.log(property_entries);
-        var property;
-        var value;
-        property_entries.forEach(entry => {
-            property = entry[0];
-            value = entry[1];
-            node.style.setProperty(property, value);
-        }); 
-        
+        opacity: "0",
+        transform: "translateX(-3em)"
     }
 
     // Toggle settings menu on and off
     login_settings_btn.addEventListener('click', () => {
         if(login_settings_menu_wrapper.classList.contains('toggle-show')){
             login_settings_menu_wrapper.classList.remove('toggle-show');
-            updateProperty(visibility, cssShow);
+            updateProperty(visibility, loginWrapperShow);
         }else{
             login_settings_menu_wrapper.classList.add('toggle-show');
-            updateProperty(visibility, cssHide);
+            updateProperty(visibility, loginWrapperHide);
         }
     });
 
     color_palette.forEach((el) => {
         el.addEventListener('click', () =>  {
-
             var primary_color = gradientColorExtractor(el, 'background-image')[0];
             var secondary_color = gradientColorExtractor(el, 'background-image')[1];
             changeThemeColor(root, primary_color, secondary_color);
