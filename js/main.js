@@ -24,13 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
         "--global-theme-color" : "#fff",
         "--global-theme-contrast-color" : "#f5f5f5",
         "--global-theme-darker-contrast-color" : "#dcdcdc",
-        "--global-theme-negative" : "#333"
+        "--global-theme-special-txt-color" : "var(--white)",
+        "--global-theme-negative" : "var(--primary-color)"
     }
 
     var darkTheme = {
         "--global-theme-color" : "#333",
         "--global-theme-contrast-color" : "#444",
         "--global-theme-darker-contrast-color" : "#222",
+        "--global-theme-special-txt-color" : "var(--primary-color)",
         "--global-theme-negative" : "#fff"
     }
 

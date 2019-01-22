@@ -30,6 +30,7 @@ body{
     --global-theme-color: #333;
     --global-theme-contrast-color: #444;
     --global-theme-darker-contrast-color: #222;
+    --global-theme-special-txt-color: var(--primary-color);
     --global-theme-negative: #fff;
     --white: rgba(255,255,255, 1);
     --semi-transparent-white: rgba(255,255,255, 0.7);
@@ -83,8 +84,8 @@ h1{
     display: flex;
     flex-direction: row;
     justify-content: center;
-    width: 6em;
-    height: 6em;
+    width: 6.1em;
+    height: 6.1em;
     align-items: center;
     margin: 2em 0em;
     border-radius: 50%;
@@ -109,6 +110,7 @@ h1{
 }
 
 .login-banner h3{
+    color: var(--global-theme-special-txt-color);
     font-weight: 300;
     margin: 0.7em 0em 0.7em 0.5em;
 }
@@ -131,6 +133,7 @@ form{
 }
 
 .input-field-icon-wrapper{
+    color: var(--global-theme-special-txt-color);
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -219,6 +222,7 @@ form{
 }
 
 .banner-sm{
+    color: var(--global-theme-special-txt-color);
     border-radius: 3px;
     box-shadow: var(--box-shadow-lv2);
     box-sizing: border-box;
@@ -263,7 +267,7 @@ form{
     height: 2.2em;
     margin: 0.5rem;
     border-radius: 50%;
-    border: solid var(--global-theme-negative) 2px;
+    /* border: solid var(--global-theme-negative) 2px; */
     box-sizing: border-box;
 }
 
@@ -312,7 +316,7 @@ form{
 
 
 .border-bottom-sm{
-    border-bottom: 1px solid var(--primary-color);
+    border-bottom: 2px solid var(--primary-color);
 }
 
 .border-bottom-sm:focus{
@@ -340,6 +344,10 @@ form{
     background-image: linear-gradient(to right,var(--primary-color) , var(--secondary-color));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.bg-highlight{
+    background-color: var(--primary-color);
 }
 
 .bg-theme{
@@ -375,7 +383,7 @@ form{
 }
 
 .bg-theme-amber{
-    background-image: linear-gradient(to right,#ff0844, #ffb199);
+    background-image: linear-gradient(to right, #d53369, #FFC371);
 }
 
 .bg-theme-dirt{

@@ -54,14 +54,14 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
       </figure>
     </div>
   <div class="input-field-wrapper">
-    <div class="input-field-icon-wrapper txt-highlight global-theme-negative">
+    <div class="input-field-icon-wrapper global-theme-negative">
         <i class="fas fa-user"></i>
     </div>
     <input type="text" name="username" placeholder="Username" class="input-field-styles border-bottom-sm global-theme-contrast">
   </div>
   <br>
   <div class="input-field-wrapper">
-      <div class="input-field-icon-wrapper txt-highlight global-theme-negative">
+      <div class="input-field-icon-wrapper global-theme-negative">
           <i class="fas fa-unlock"></i>
       </div>
     <input type="password" name="password" placeholder="Password" class="input-field-styles border-bottom-sm global-theme-contrast">
@@ -77,7 +77,17 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
 </div>
 <div id="login-settings-menu-wrapper" class="global-theme toggle-show visibility">
 <div class="login-settings-component-wrapper login-settings-component global-theme-contrast">
-      <div class="banner-sm global-theme-negative txt-highlight">
+    <div class="banner-sm txt-highlight">
+        <h5>Light Mode</h5>
+    </div>
+    <div id="login-mode-selector">
+      <div class="global-theme-toggle-wrapper toggle-off">
+        <div class="global-theme-toggle global-theme-negative"></div>
+      </div>
+    </div>
+</div>
+<div class="login-settings-component-wrapper login-settings-component global-theme-contrast">
+      <div class="banner-sm txt-highlight">
           <h5>Colors</h5>
       </div>
       <div id="login-theme-selector">
@@ -91,16 +101,6 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
         <div id="amber" class="color-palette bg-theme-amber"></div>
         <div id="dirt" class="color-palette bg-theme-dirt"></div>
         <div id="midnight" class="color-palette bg-theme-midnight"></div>
-      </div>
-  </div>
-  <div class="login-settings-component-wrapper login-settings-component global-theme-contrast">
-      <div class="banner-sm global-theme-negative txt-highlight">
-          <h5>Light Mode</h5>
-      </div>
-      <div id="login-mode-selector">
-        <div class="global-theme-toggle-wrapper toggle-off">
-          <div class="global-theme-toggle global-theme-negative"></div>
-        </div>
       </div>
   </div>
 </div>
