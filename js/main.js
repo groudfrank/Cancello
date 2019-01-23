@@ -23,8 +23,9 @@ document.addEventListener('DOMContentLoaded', () => {
     var lightTheme = {
         "--global-theme-color" : "#fff",
         "--global-theme-contrast-color" : "#f5f5f5",
-        "--global-theme-darker-contrast-color" : "#dcdcdc",
+        "--global-theme-darker-contrast-color" : "#e6e6e6",
         "--global-theme-special-txt-color" : "var(--white)",
+        "--global-theme-color-varied" : "rgba(255,255,255,0.8)",
         "--global-theme-negative" : "var(--primary-color)"
     }
 
@@ -33,6 +34,7 @@ document.addEventListener('DOMContentLoaded', () => {
         "--global-theme-contrast-color" : "#444",
         "--global-theme-darker-contrast-color" : "#222",
         "--global-theme-special-txt-color" : "var(--primary-color)",
+        "--global-theme-color-varied" : "#333",
         "--global-theme-negative" : "#fff"
     }
 

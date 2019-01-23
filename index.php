@@ -75,7 +75,7 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
 <div class="login-settings-btn" title="settings">
   <i class="fas fa-sliders-h"></i>
 </div>
-<div id="login-settings-menu-wrapper" class="global-theme toggle-show visibility">
+<div id="login-settings-menu-wrapper" class="toggle-show visibility">
 <div class="login-settings-component-wrapper login-settings-component global-theme-contrast">
     <div class="banner-sm txt-highlight">
         <h5>Light Mode</h5>
@@ -98,7 +98,7 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
         <div id="quepal" class="color-palette bg-theme-quepal"></div>
         <div id="glacia" class="color-palette bg-theme-glacia"></div>
         <div id="sakura" class="color-palette bg-theme-sakura"></div>
-        <div id="amber" class="color-palette bg-theme-amber"></div>
+        <div id="peach" class="color-palette bg-theme-peach"></div>
         <div id="dirt" class="color-palette bg-theme-dirt"></div>
         <div id="midnight" class="color-palette bg-theme-midnight"></div>
       </div>

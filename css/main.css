@@ -30,6 +30,7 @@ body{
     --global-theme-color: #333;
     --global-theme-contrast-color: #444;
     --global-theme-darker-contrast-color: #222;
+    --global-theme-color-varied: #333;
     --global-theme-special-txt-color: var(--primary-color);
     --global-theme-negative: #fff;
     --white: rgba(255,255,255, 1);
@@ -197,6 +198,7 @@ form{
     left: 0;
     bottom: 0;
     z-index: 4;
+    background-color: var(--global-theme-color-varied);
     margin: 0em 0em 3.5em 1em;
     padding: 1em;
     border-radius: 0.5em;
@@ -217,7 +219,7 @@ form{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1em 0em;
+    margin: 0.4em 0em;
     box-sizing: border-box;
 }
 
@@ -268,7 +270,17 @@ form{
     margin: 0.5rem;
     border-radius: 50%;
     /* border: solid var(--global-theme-negative) 2px; */
+    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, .14),
+    0 3px 3px -2px rgba(0, 0, 0, .2), 0 1px 8px 0
+     rgba(0, 0, 0, .12);
     box-sizing: border-box;
+    transition: all 0.1s ease-in-out;
+}
+
+.color-palette:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+    /* border: solid 3px var(--global-theme-negative); */
 }
 
 ::-webkit-input-placeholder { 
@@ -383,7 +395,7 @@ form{
     background-image: linear-gradient(to right,#a18cd1, #fbc2eb);
 }
 
-.bg-theme-amber{
+.bg-theme-peach{
     background-image: linear-gradient(to right, #d53369, #FFC371);
 }
 
