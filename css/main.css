@@ -149,7 +149,7 @@ form{
 }
 
 .input-field-styles{
-    font-size: 0.88rem;
+    font-size: 0.75rem;
     color: var(--global-theme-negative);
     height: 2.2rem;
     width: 100%;
@@ -201,13 +201,13 @@ form{
     background-color: var(--global-theme-color-varied);
     margin: 0em 0em 3.5em 1em;
     padding: 1em;
-    border-radius: 0.5em;
+    border-radius: 0.5em 1em;
     box-sizing: border-box;
 }
 
 .login-settings-component{
     width: 22vw;
-    padding: 0.5em;
+    padding: 0.5em 1em;
     border-radius: 5px;
     box-shadow: var(--box-shadow-lv1);
     box-sizing: inherit;
@@ -238,20 +238,20 @@ form{
 }
 
 .global-theme-toggle-wrapper{
-    width: 7em;
+    width: 5em;
     height: 1.5em;
     padding: 0.2em;
     margin: 0.7em;
     background-color: var(--global-theme-color);
     border: solid 3px var(--global-theme-negative);
-    border-radius: 2em;
+    border-radius: 5px;
    box-shadow: var(--box-shadow-lv2);
 }
 
 .global-theme-toggle{
     width: 1.5em;
     height: 1.5em;
-    border-radius: 50%;
+    border-radius: 5px;
     margin-left: calc(100% - 1.5em);
     transition: all 0.2s ease-in-out;
 }
