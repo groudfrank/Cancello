@@ -57,14 +57,14 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
     <div class="input-field-icon-wrapper global-theme-negative">
         <i class="fas fa-user"></i>
     </div>
-    <input type="text" name="username" placeholder="Username" class="input-field-styles border-sm global-theme-contrast">
+    <input type="text" name="username" placeholder="Username" class="input-field-styles global-theme-contrast">
   </div>
   <br>
   <div class="input-field-wrapper">
       <div class="input-field-icon-wrapper global-theme-negative">
           <i class="fas fa-unlock"></i>
       </div>
-    <input type="password" name="password" placeholder="Password" class="input-field-styles border-sm global-theme-contrast">
+    <input type="password" name="password" placeholder="Password" class="input-field-styles global-theme-contrast">
   </div>
   <br>
   <input type="submit" name="login" value="Login" class="input-submit-style txt-highlight btn-global-theme border-sm">

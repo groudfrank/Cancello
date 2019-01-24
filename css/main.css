@@ -159,8 +159,13 @@ form{
     margin-bottom: 1.5rem;
     border: none;
     border-radius: 1px;
-    /* box-shadow: var(--box-shadow-lv2); */
+    border-bottom: solid 1px var(--primary-color);
     transition: 0.1s all ease-in-out;
+}
+
+.input-field-styles:focus{
+    border: 1px solid var(--primary-color);
+    outline: var(--primary-color);
 }
 
 #form-pwd-recovery{
@@ -207,9 +212,10 @@ form{
 
 .login-settings-component{
     width: 22vw;
+    min-width: 22vw;
     padding: 0.5em 1em;
     border-radius: 5px;
-    box-shadow: var(--box-shadow-lv1);
+    box-shadow: var(--box-shadow-lv3);
     box-sizing: inherit;
     /* border: solid var(--primary-color) 1px; */
 }
@@ -239,19 +245,19 @@ form{
 
 .global-theme-toggle-wrapper{
     width: 5em;
-    height: 1.5em;
+    height: 1.1em;
     padding: 0.2em;
     margin: 0.7em;
     background-color: var(--global-theme-color);
-    border: solid 3px var(--global-theme-negative);
+    border: solid 2px var(--global-theme-negative);
     border-radius: 5px;
    box-shadow: var(--box-shadow-lv2);
 }
 
 .global-theme-toggle{
     width: 1.5em;
-    height: 1.5em;
-    border-radius: 5px;
+    height: 1.1em;
+    border-radius: 2px;
     margin-left: calc(100% - 1.5em);
     transition: all 0.2s ease-in-out;
 }
@@ -333,12 +339,6 @@ form{
 
 .border-sm{
     border: solid 1px var(--primary-color);
-}
-
-.border-sm:focus{
-    border: 1px solid var(--primary-color);
-    outline: var(--primary-color);
-    /* box-shadow: var(--box-shadow-lv1); */
 }
 
 .border-bottom-theme{
