@@ -212,7 +212,7 @@ form{
 
 .login-settings-component{
     width: 22vw;
-    min-width: 22vw;
+    min-width: 21em;
     padding: 0.5em 1em;
     border-radius: 5px;
     box-shadow: var(--box-shadow-lv3);
@@ -395,8 +395,8 @@ form{
     background-image: linear-gradient(to right,#a18cd1, #fbc2eb);
 }
 
-.bg-theme-peach{
-    background-image: linear-gradient(to right, #d53369, #FFC371);
+.bg-theme-cement{
+    background-image: linear-gradient(to right, #868f96, #596164);
 }
 
 .bg-theme-dirt{
@@ -405,6 +405,10 @@ form{
 
 .bg-theme-midnight{
     background-image: linear-gradient(to right,#537895,#09203f);
+}
+
+.bg-theme-passion{
+    background-image: linear-gradient(to right, #ff7eb3,#ff758c);
 }
 
 .no-display{
