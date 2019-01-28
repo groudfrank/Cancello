@@ -38,7 +38,6 @@ var propertyValueExtractor = (node, property) => {
 // braces with the rgb values and commas remain. The for in loop just appends the 
 // the string 'rgb' to those rgb values again.
 var gradientColorExtractor = (node, property) => {
-    var regex = /\),/g;
     var property_string = propertyValueExtractor(node, property);
     property_string = property_string.replace(/\s|[a-z]|[A-Z]|\-/g, '');
     property_string = property_string.slice(2, -1);

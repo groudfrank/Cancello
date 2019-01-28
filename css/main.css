@@ -184,7 +184,12 @@ form{
     border-radius: 3px;
     margin-top: 1em;
     box-shadow: var(--box-shadow-lv2);
+    transition: transform 0.3s ease-in-out;
 }
+
+/* .input-submit-style:hover{
+    transform: translateY(-6px);
+} */
 
 #form-pwd-recovery{
     font-size: 0.75rem;
@@ -255,7 +260,7 @@ form{
     border: solid 2px var(--global-theme-negative);
     border-radius: 5px;
     box-shadow: var(--box-shadow-lv2);
-    box-shadow: inset 0 0 10px rgba(0,0,0, 0.5);
+    box-shadow: inset 0 1px 6px 0 rgba(32,33,36,0.28);
 }
 
 .global-theme-toggle{
