@@ -1,6 +1,10 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     var root = document.querySelector(':root');
+    var login_usrname = document.querySelector("#login-usrname");
+    var username_input = document.querySelector("input[name=username]");
+    var usr_name_input_dialog = document.querySelector('#usr-name-input-dialog');
+    var usr_name_input_dialog_p = document.querySelector('#usr-name-input-dialog p');
     var login_settings_btn = document.querySelector('.login-settings-btn');
     var login_settings_menu_wrapper = document.querySelector('#login-settings-menu-wrapper');
     var color_palette = document.querySelectorAll('.color-palette');
@@ -69,5 +73,23 @@ document.addEventListener('DOMContentLoaded', () => {
             global_theme_toggle.style.setProperty('margin-left', toggle_btn);
             updateProperty(root, darkTheme);
         }
+    });
+
+    username_input.addEventListener('focusout', () => {
+        
+        // if(login_usrname.value == ""){
+        //     alert('This field cannot be empty');
+        // }
+        // else if(login_usrname.value.indexOf('@') !== -1){
+        //     alert('@ detected');
+        // } else{
+        //     alert('Invalid email address');
+        // }
+
+        // if(usr_name_input_dialog.classList.contains('hide-me')){
+        //     usr_name_input_dialog.classList.remove('hide-me');
+        // } else{
+        //     usr_name_input_dialog.classList.add('hide-me');
+        // }
     });
 });

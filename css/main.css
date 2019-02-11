@@ -187,7 +187,7 @@ form{
     transition: transform 0.3s ease-in-out;
 }
 
-.input-dialog{
+.login-input-dialog{
     display: flex;
     flex-direction: row;
     font-size: 0.8rem;
@@ -197,11 +197,11 @@ form{
     margin-bottom: 0.7rem;
 }
 
-.input-dialog i{
+.login-input-dialog i{
     margin-right: 6px;
 }
 
-.input-dialog p{
+.login-input-dialog p{
     margin: 0px;
 }
 
@@ -435,6 +435,10 @@ form{
 
 .no-display{
     display: none !important;
+}
+
+.hide-me{
+    visibility: hidden !important;
 }
 
 .visibility{

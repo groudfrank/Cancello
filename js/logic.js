@@ -50,3 +50,11 @@ var gradientColorExtractor = (node, property) => {
   
     return property_string_array;
 };
+
+var stringCheck = (node, lookout) => {
+    if(node.value.indexOf(lookout) !== -1){
+        return true;
+    } else {
+        return false;
+    }
+}
