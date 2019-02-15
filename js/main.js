@@ -77,14 +77,21 @@ document.addEventListener('DOMContentLoaded', () => {
 
     username_input.addEventListener('focusout', () => {
         
-        // if(login_usrname.value == ""){
-        //     alert('This field cannot be empty');
-        // }
-        // else if(login_usrname.value.indexOf('@') !== -1){
-        //     alert('@ detected');
-        // } else{
-        //     alert('Invalid email address');
-        // }
+        if(login_usrname.value == ""){
+            // alert('This field cannot be empty');
+           if(login_usrname.value == ""){
+                usr_name_input_dialog.classList.remove('hide-me');
+                usr_name_input_dialog_p.textContent = "Field cannot be empty!"; 
+           }
+           if(login_usrname.value != ""){
+                usr_name_input_dialog.classList.add('hide-me');
+           } 
+
+        }else if(login_usrname.value.indexOf('@') !== -1){
+            // alert('@ detected');
+        } else{
+            // alert('Invalid email address');
+        }
 
         // if(usr_name_input_dialog.classList.contains('hide-me')){
         //     usr_name_input_dialog.classList.remove('hide-me');
