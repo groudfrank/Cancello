@@ -77,25 +77,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     username_input.addEventListener('focusout', () => {
         
-        if(login_usrname.value == ""){
-            // alert('This field cannot be empty');
-           if(login_usrname.value == ""){
+        if((login_usrname.value == "") || (login_usrname.value.indexOf('@') == -1)){
+            if(login_usrname.value == ""){
                 usr_name_input_dialog.classList.remove('hide-me');
-                usr_name_input_dialog_p.textContent = "Field cannot be empty!"; 
-           }
-           if(login_usrname.value != ""){
-                usr_name_input_dialog.classList.add('hide-me');
-           } 
-
-        }else if(login_usrname.value.indexOf('@') !== -1){
-            // alert('@ detected');
-        } else{
-            // alert('Invalid email address');
+                usr_name_input_dialog_p.textContent = "Field cannot be empty!";
+            }
+            else if(login_usrname.value.indexOf('@') == -1){
+                usr_name_input_dialog.classList.remove('hide-me');
+                usr_name_input_dialog_p.textContent = "That's not a valid email address!";
+                // alert("Not a valid email address");
+            } 
         }
 
-        // if(usr_name_input_dialog.classList.contains('hide-me')){
+        if((login_usrname.value != "") || ((login_usrname.value.indexOf('@') !== -1))){
+            usr_name_input_dialog.classList.add('hide-me');
+        } 
+
+        // if(login_usrname.value.indexOf('@') == -1){
         //     usr_name_input_dialog.classList.remove('hide-me');
-        // } else{
+        //     usr_name_input_dialog_p.textContent = "That's not a valid email address!";
+        // } 
+
+        // if(login_usrname.value.indexOf('@') !== -1){
         //     usr_name_input_dialog.classList.add('hide-me');
         // }
     });
