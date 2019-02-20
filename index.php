@@ -57,9 +57,9 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
     <div class="input-field-icon-wrapper global-theme-negative">
         <i class="fas fa-user"></i>
     </div>
-    <input id="login-usrname" type="text" name="username" placeholder="Username" 
+    <input id="login-username" type="text" name="username" placeholder="Username" 
     class="input-field-styles global-theme-contrast">
-    <div id="usr-name-input-dialog" class="login-input-dialog hide-me">
+    <div id="username-input-dialog" class="login-input-dialog hide-me">
     <i class="fas fa-exclamation-triangle"></i>
     <p></p>
     </div>
