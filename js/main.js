@@ -1,16 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     var root = document.querySelector(':root');
-    var login_username = document.querySelector("#login-username");
-    var username_input = document.querySelector("input[name=username]");
-    var username_input_dialog = document.querySelector('#username-input-dialog');
-    var username_input_dialog_p = document.querySelector('#username-input-dialog p');
-    var login_settings_btn = document.querySelector('.login-settings-btn');
-    var login_settings_menu_wrapper = document.querySelector('#login-settings-menu-wrapper');
-    var color_palette = document.querySelectorAll('.color-palette');
-    var global_theme_toggle_wrapper = document.querySelector('.global-theme-toggle-wrapper');
-    var global_theme_toggle = document.querySelector('.global-theme-toggle');
+    var loginUsername = document.querySelector("#login-username");
+    var usernameInput = document.querySelector("input[name=username]");
+    var usernameInputDialogWrapper = document.querySelector('#username-input-dialog');
+    var usernameInputDialog = document.querySelector('#username-input-dialog p');
+    var loginSettingsBtn = document.querySelector('.login-settings-btn');
+    var loginSettingsMenuWrapper = document.querySelector('#login-settings-menu-wrapper');
+    var colorPalette = document.querySelectorAll('.color-palette');
+    var globalThemeToggleWrapper = document.querySelector('.global-theme-toggle-wrapper');
+    var globalThemeToggle = document.querySelector('.global-theme-toggle');
     var visibility = document.querySelector('.visibility');
+    var emailRegex = "^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$"
 
     var loginWrapperShow = {
         visibility: "visible",
@@ -43,17 +44,17 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Toggle settings menu on and off
-    login_settings_btn.addEventListener('click', () => {
-        if(login_settings_menu_wrapper.classList.contains('toggle-show')){
-            login_settings_menu_wrapper.classList.remove('toggle-show');
+    loginSettingsBtn.addEventListener('click', () => {
+        if(loginSettingsMenuWrapper.classList.contains('toggle-show')){
+            loginSettingsMenuWrapper.classList.remove('toggle-show');
             updateProperty(visibility, loginWrapperShow);
         }else{
-            login_settings_menu_wrapper.classList.add('toggle-show');
+            loginSettingsMenuWrapper.classList.add('toggle-show');
             updateProperty(visibility, loginWrapperHide);
         }
     });
 
-    color_palette.forEach((el) => {
+    colorPalette.forEach((el) => {
         el.addEventListener('click', () =>  {
             var primary_color = gradientColorExtractor(el, 'background-image')[0];
             var secondary_color = gradientColorExtractor(el, 'background-image')[1];
@@ -61,36 +62,36 @@ document.addEventListener('DOMContentLoaded', () => {
         })
     });
 
-    const toggle_btn = global_theme_toggle.style.marginLeft;
+    const toggle_btn = globalThemeToggle.style.marginLeft;
 
-    global_theme_toggle_wrapper.addEventListener('click', () => {
-        if(global_theme_toggle_wrapper.classList.contains('toggle-off')){
-            global_theme_toggle_wrapper.classList.remove('toggle-off');
-            global_theme_toggle.style.setProperty('margin-left', '0em');
+    globalThemeToggleWrapper.addEventListener('click', () => {
+        if(globalThemeToggleWrapper.classList.contains('toggle-off')){
+            globalThemeToggleWrapper.classList.remove('toggle-off');
+            globalThemeToggle.style.setProperty('margin-left', '0em');
             updateProperty(root, lightTheme);
         }else{
-            global_theme_toggle_wrapper.classList.add('toggle-off');
-            global_theme_toggle.style.setProperty('margin-left', toggle_btn);
+            globalThemeToggleWrapper.classList.add('toggle-off');
+            globalThemeToggle.style.setProperty('margin-left', toggle_btn);
             updateProperty(root, darkTheme);
         }
     });
 
-    username_input.addEventListener('focusout', () => {
+    usernameInput.addEventListener('focusout', () => {
         
-        if(login_username.value == ""){
-            // If field is empty.
-            username_input_dialog.classList.remove('hide-me');
-            username_input_dialog_p.textContent = "Field cannot be empty!";
+        // if field is empty.
+        if(loginUsername.value == ""){
+            usernameInputDialogWrapper.classList.remove('hide-me');
+            usernameInputDialog.textContent = "Field cannot be empty!";
         }
 
-        else if(login_username.value.indexOf('@') === -1){
-            // alert("Invalid Email Address");
-            username_input_dialog.classList.remove('hide-me');
-            username_input_dialog_p.textContent = "Not a valid email address!";
+        // if email address format is invalid
+        else if(loginUsername.value.indexOf('@') === -1){
+            usernameInputDialogWrapper.classList.remove('hide-me');
+            usernameInputDialog.textContent = "Not a valid email address!";
         } 
 
-        if((login_username.value != "") || ((login_username.value.indexOf('@') !== -1))){
-            username_input_dialog.classList.add('hide-me');
-        } 
+        else{
+            usernameInputDialogWrapper.classList.add('hide-me');
+        }
     });
 });
