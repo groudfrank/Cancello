@@ -1,6 +1,8 @@
 # Cancello
 Cancello is the login manager component for what will be an inventory management app. The project is still very much in pre-alpha stage.
 
+![](img/cancello.gif)
+
 ## Getting Started
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
 
