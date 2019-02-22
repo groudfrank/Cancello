@@ -18,7 +18,7 @@ The vagrant file will automatically install the other necessary components like 
 When the virtual environment setup is done, type `localhost:8080` into your favorite browser.
 
 ## Author
-[**Groud Frank**](https://groudfrank.com)
+[**Groud Frank**](https://www.groudfrank.com)
 
 ## License
 This project is licensed under the MIT License.(More info coming soon)
