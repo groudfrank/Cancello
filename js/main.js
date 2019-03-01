@@ -85,13 +85,13 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         // if email address format is invalid
-        else if(loginUsername.value.indexOf('@') === -1){
-            usernameInputDialogWrapper.classList.remove('hide-me');
-            usernameInputDialog.textContent = "Not a valid email address!";
-        } 
+        // else if(loginUsername.value.indexOf('@') === -1){
+        //     usernameInputDialogWrapper.classList.remove('hide-me');
+        //     usernameInputDialog.textContent = "Not a valid email address!";
+        // } 
 
-        else{
-            usernameInputDialogWrapper.classList.add('hide-me');
-        }
+        // else{
+        //     usernameInputDialogWrapper.classList.add('hide-me');
+        // }
     });
 });

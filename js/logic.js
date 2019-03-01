@@ -59,12 +59,12 @@ var stringCheck = (node, lookout) => {
     }
 }
 
-var validateEmail = (email) => {
-    var regex = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", "g");
+// var validateEmail = (email) => {
+//     var regex = new RegExp("^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?(?:\.[a-zA-Z0-9](?:[a-zA-Z0-9-]{0,61}[a-zA-Z0-9])?)*$", "g");
     
-    if(regex.test(email) == true){
-        return true;
-    }else{
-        return false;
-    }
-}
+//     if(regex.test(email) == true){
+//         return true;
+//     }else{
+//         return false;
+//     }
+// }
