@@ -47,7 +47,7 @@ integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00
       echo greeting($hour);?>, Ema
       </h3>
   </div>
-<form class="global-theme">
+<form method="POST" action="inventory.php" class="global-theme">
     <div class="login-avatar-wrapper">
       <figure class="login-avatar bg-theme">
         <img src="img/ema.jpeg">
