@@ -1,7 +1,7 @@
 # Cancello
 Cancello is the login manager component for what will be an inventory management app. The project is still very much in pre-alpha stage.
 
-**Project Abandoned!!**
+# Project Abandoned!!
 Now, I know this looks bad. After all, this was my first big project and the last thing you want to show to prospective employers and clients are abandoned Github projects but I've recently realized something important. Originally, this project was suppose to help make me into a better fullstack web developer, and I thought that the only way I could improve my job prospects and credibility as a developer is to be a jack of all trades and learn PHP after learning JavaScript. So that's what I did. I started learning PHP but I also learned a few things as well:
 
 1. I don't have the temperament for the kind of work a tool like PHP is needed for. Simply put, getting too deep into backend stuff zaps my motivation to learn, it zaps my will to progress as a developer and it's pulling my passion for the front-end down with it.
